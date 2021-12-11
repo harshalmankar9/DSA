@@ -40,5 +40,6 @@ int main(){
     init(&s1);
     push(&s1, 10);
     push(&s1, 20);
+    push(&s1, 30);
     printf("%d\n", pop(&s1));
 }

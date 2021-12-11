@@ -21,7 +21,7 @@ void push(Stack *sp, int value){
         return;
     }
     sp->top++;
-    sp->item[sp-top] = value;
+    sp->item[sp->top] = value;
 }
 
 int pop(Stack *sp){
@@ -30,7 +30,7 @@ int pop(Stack *sp){
         return -69;
     }
     int value;
-    value = sp->item[sp-top];
+    value = sp->item[sp->top];
     sp->top--;
     return value;
 }

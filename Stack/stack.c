@@ -36,5 +36,9 @@ int pop(Stack *sp){
 }
 
 int main(){
-
+    Stack s1;
+    init(&s1);
+    push(&s1, 10);
+    push(&s1, 20);
+    printf("%d\n", pop(&s1));
 }
